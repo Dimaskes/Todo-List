@@ -6,10 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo-List</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <script src="script.js" defer></script>
 </head>
 
 <body>
+
+    <div class="todo">
+        <div class="container">
+            <header class="todo--header">
+                <div class="overflow">
+                    <h1><span id="todaysDay">Sunday </span>Todo's</h1>
+                    <span id="todaysDate">November 1, 2020</span>
+                </div>
+            </header>
+            <div class="todo--input wrap">
+                <form action="" id="form">
+                    <input type="text" id="todoInput" placeholder="Что ты хочешь сделать сегодня?">
+                    <button class="todo--btn">Add</button>
+                </form>
+            </div>
+            <ul class="todo--list wrap">
+                <!-- <li>
+                    <span class="text">Привет</span>
+                    <div class="options">
+                        <span id="check"><i class="fa fa-check"></i></span>
+                        <span id="edit"><i class="fa fa-edit"></i></span>
+                        <span id="trash"><i class="fa fa-trash"></i></span>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+    </div>
 
 </body>
 

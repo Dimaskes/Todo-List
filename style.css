@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background: radial-gradient(ellipse at center, #17a786, #9adcc9);
+    height: 100vh;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.todo {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.container {
+    background: white;
+    width: 100%;
+    border: 0.5px solid black;
+    border-radius: 30px;
+    padding-bottom: 40px;
+}
+
+.wrap {
+    width: 80%;
+    margin: auto;
+}
+
+.todo--header {
+    background-image: linear-gradient( to right bottom, rgb(58 181 152), rgba(124, 512, 61, 0.35)), url("https://i03.fotocdn.net/s115/812d04bb43d5e61b/public_pin_l/2621521226.jpg");
+    background-size: cover;
+    padding: 50px;
+    color: white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.todo--header .overflow {
+    overflow: hidden;
+    transform: translateX(10px);
+}
+
+.todo--header .overflow h1 {
+    margin: 0;
+    animation: slideInDate 0.5s ease both;
+}
+
+.todo--header .overflow #todaysDate {
+    transform: translateX(-96px);
+    display: block;
+    animation: slideInDate 0.4s ease both;
+}
+
+@keyframes slideInDate {
+    0% {
+        transform: translateX(-249px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.todo--input {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px #7777;
+    background: white;
+    transform: translateY(-40%);
+}
+
+.todo--input input {
+    width: calc(100% - 60px);
+    padding: 10px;
+    outline: none;
+    display: inline-block;
+}
+
+.todo--input input::placeholder {
+    font-family: "Montserrat", sans-serif;
+}
+
+.todo--input .todo--btn {
+    position: absolute;
+    margin-left: 5px;
+    display: inline-block;
+    border: none;
+    padding: 12px;
+    background-color: #99d798;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+    color: white;
+}
+
+.todo--list li {
+    display: flex;
+    align-items: center;
+    background-color: #80c7b4;
+    border-radius: 5px;
+    width: 100%;
+    height: 45px;
+    overflow: hidden;
+}
+
+.todo--list .text {
+    margin: auto
+}
+
+.todo--list .options {
+    margin-right: -115px;
+    transition: margin-right 0.3s ease;
+}
+
+.todo--list li:hover .options {
+    margin-right: 0;
+}
+
+.todo--list .options span {
+    height: 45px;
+    width: 40px;
+    line-height: 45px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    margin: -3px;
+    color: white;
+    background-color: black;
+    transition: background-color 0.3s;
+}
+
+.todo--list .options span:hover:nth-child(1) {
+    background-color: blue;
+}
+
+.todo--list .options span:hover:nth-child(2) {
+    background-color: coral;
+}
+
+.todo--list .options span:hover:nth-child(3) {
+    background-color: red;
+}
